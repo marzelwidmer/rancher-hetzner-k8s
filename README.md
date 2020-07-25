@@ -54,12 +54,11 @@ https://rancher.c3smonkey.ch/n/drivers/cluster
 
 
 Download URL: 
-https://github.com/JonasProgrammer/docker-machine-driver-hetzner/releases/download/2.1.0/docker-machine-driver-hetzner_2.1.0_linux_amd64.tar.gz
+https://github.com/marzelwidmer/rancher-hetzner-k8s/raw/master/hcloud-rancher-v2-ui-driver/docker-machine-driver-hetzner_2.1.0_linux_amd64.tar.gz
 
-<!-- https://github.com/JonasProgrammer/docker-machine-driver-hetzner/releases/download/2.1.0/docker-machine-driver-hetzner_2.1.0_linux_amd64.tar.gz (Docker-machine driver for Hetzner) -->
 
 Custom UI URL (for Add Node template UI): 
-https://storage.googleapis.com/hcloud-rancher-v2-ui-driver/component.js
+https://raw.githubusercontent.com/marzelwidmer/rancher-hetzner-k8s/master/hcloud-rancher-v2-ui-driver/component.js
 
 Whitelist Domains (to access UI file): 
 storage.googleapis.com
