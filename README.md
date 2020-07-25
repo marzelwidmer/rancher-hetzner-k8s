@@ -66,16 +66,14 @@ storage.googleapis.com
 
 ```
 
-
-### Create Cluster
+### Node Template
 https://rancher.c3smonkey.ch/g/clusters/add/launch/hetzner
 
-#### Add MASTER Node Template
+### Add MASTER Node Template
 API Token:
 ```
 YOUR-HETZNER-API-TOKEN
 ```
-
 
 Region:
 ```
@@ -84,7 +82,7 @@ Nuremberg
 
 Image:
 ```
-Ubuntu 20.03
+Ubuntu 18.04
 ```
 
 Size:
@@ -103,38 +101,8 @@ Name:
 master
 ```
 
-#### Add WORKER Node Template
-API Token:
-```
-YOUR-HETZNER-API-TOKEN
-```
-
-
-Region:
-```
-Nuremberg
-```
-
-Image:
-```
-Ubuntu 20.03
-```
-
-Size:
-```
-CX31 - 8GB Memory - 80GB Disk space
-```
-
-Networks:
-```
-k8s-network
-```
-select your private network and check “Use private network”.
-
-Name:
-```
-worker
-```
+Go to https://rancher.c3smonkey.ch/n/node-templates 
+Clone the template and change the Size to CX31
 
 
 
