@@ -49,27 +49,92 @@ https://rancher.c3smonkey.ch
 
 
 ### Add node driver
-https://rancher.c3smonkey.ch/n/drivers/cluster
+https://rancher.c3smonkey.ch/n/drivers/node
 
-
-
+```
+Docker-machine driver for Hetzner
 Download URL: 
-https://github.com/marzelwidmer/rancher-hetzner-k8s/raw/master/hcloud-rancher-v2-ui-driver/docker-machine-driver-hetzner_2.1.0_linux_amd64.tar.gz
+https://github.com/JonasProgrammer/docker-machine-driver-hetzner/releases/download/2.1.0/docker-machine-driver-hetzner_2.1.0_linux_amd64.tar.gz
+
+Node template UI
+Custom UI URL
+https://storage.googleapis.com/hcloud-rancher-v2-ui-driver/component.js 
 
 
-Custom UI URL (for Add Node template UI): 
-https://raw.githubusercontent.com/marzelwidmer/rancher-hetzner-k8s/master/hcloud-rancher-v2-ui-driver/component.js
-
-Whitelist Domains (to access UI file): 
+Whitelist Domains: 
 storage.googleapis.com
 
+```
 
 
+### Create Cluster
+https://rancher.c3smonkey.ch/g/clusters/add/launch/hetzner
+
+#### Add MASTER Node Template
+API Token:
+```
+YOUR-HETZNER-API-TOKEN
+```
 
 
+Region:
+```
+Nuremberg
+```
+
+Image:
+```
+Ubuntu 20.03
+```
+
+Size:
+```
+CX21 - 4GB Memory - 40GB Disk space
+```
+
+Networks:
+```
+k8s-network
+```
+select your private network and check “Use private network”.
+
+Name:
+```
+master
+```
+
+#### Add WORKER Node Template
+API Token:
+```
+YOUR-HETZNER-API-TOKEN
+```
 
 
+Region:
+```
+Nuremberg
+```
 
+Image:
+```
+Ubuntu 20.03
+```
+
+Size:
+```
+CX31 - 8GB Memory - 80GB Disk space
+```
+
+Networks:
+```
+k8s-network
+```
+select your private network and check “Use private network”.
+
+Name:
+```
+worker
+```
 
 
 
